@@ -11,7 +11,7 @@ Premises:
 - Bubble sorting is suboptimal since it might push heavy instruments thru many swaps (no "weight" optimization)
 
 Solution:
-- Optimize the swapping sequence by minimizing the amount of weight swapped.
+- Optimize the swapping sequence by minimizing the amount of weight swapped. This can be done by always pushing forward a weightless instrument.
 - Swap the lightest instrument to an empty slot
 - Swap the empty instrument with correct instrument
 - When the lightest instrument is the correct, swap it in and start a new swap cycle.
