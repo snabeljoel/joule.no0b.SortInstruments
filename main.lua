@@ -211,7 +211,7 @@ for seq, pattern_index in ipairs(renoise.song().sequencer.pattern_sequence) do
      for note_column_index = 1, renoise.song():track(track_index).visible_note_columns do
       local val = line:note_column(note_column_index)
       if not val.is_empty then
-       if val.instrument_value ~= 255 then
+       if val.instrument_value ~= 255 and map_table[val.instrument_value+1] then
         map_table[val.instrument_value + 1].population = map_table[val.instrument_value + 1].population + 1
 end end end end end end end end 
  table.sort(map_table, function(a, b)
