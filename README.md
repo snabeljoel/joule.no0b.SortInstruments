@@ -13,6 +13,6 @@ Premises:
 Solution:
 - Optimize the swapping sequence by minimizing the amount of weight swapped.
 - Swap the lightest instrument to an empty slot
-- Swap the empty slot with correct instrument
+- Swap the empty instrument with correct instrument
 - When the lightest instrument is the correct, swap it in and start a new swap cycle.
 - Best case: N+1 swaps. Worst case: 3N/2 swaps. (?)
