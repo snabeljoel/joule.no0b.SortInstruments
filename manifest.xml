@@ -2,10 +2,10 @@
 <RenoiseScriptingTool doc_version="0">
   <ApiVersion>5</ApiVersion>
   <Id>joule.no0b.SortInstruments</Id>
-  <Version>0.9</Version>
+  <Version>1.0</Version>
   <Author>joule</Author>
   <Name>Sort Instruments</Name>
   <Category>Instrument list</Category>
-  <Description>Sorting and cleaning the instrument list</Description>
+  <Description>Sort the instrument list by various criteria</Description>
   <Homepage>http://www.soundcloud.com/jooel-2</Homepage>
 </RenoiseScriptingTool>
