@@ -91,8 +91,8 @@ function map_size()
   table.insert(map_table, { name = instrument.name, original_position = _, size = size_of_instrument(_) })
  end
  table.sort(map_table, function(b, a)
-  if a.size == b.size then return a.original_position > b.original_position
-  else return a.size < b.size
+  if a.size == b.size then return a.original_position < b.original_position
+  else return a.size > b.size
   end  
   end)
  for instrument = 1, #map_table do
@@ -244,13 +244,13 @@ renoise.tool():add_menu_entry {
 }
 
 renoise.tool():add_menu_entry {
-  name = "Instrument Box:Sort Instruments...:Appearance (from start)",
-  invoke = function() sort_instruments(map_appearance_song()) end
+  name = "Instrument Box:Sort Instruments...:Occurrence (Horizontal)",
+  invoke = function() sort_instruments(map_appearance_track()) end
 }
 
 renoise.tool():add_menu_entry {
-  name = "Instrument Box:Sort Instruments...:Appearance (from track)",
-  invoke = function() sort_instruments(map_appearance_track()) end
+  name = "Instrument Box:Sort Instruments...:Occurrence (Vertical)",
+  invoke = function() sort_instruments(map_appearance_song()) end
 }
 
 renoise.tool():add_menu_entry {
@@ -264,7 +264,7 @@ renoise.tool():add_menu_entry {
 }
 
 renoise.tool():add_menu_entry {
-  name = "---Instrument Box:Sort Instruments...:Remove empty slots",
+  name = "---Instrument Box:Sort Instruments...:Delete Empty Instruments",
   invoke = function() remove_empty_slots() end
 }
 
